@@ -1,0 +1,44 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuDiscoveryKids_Downloader"
+        mc:Ignorable="d"
+        Title="TuDiscoveryKids Downloader" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1019.358" Height="656.583" MinHeight="320" MinWidth="1012" Icon="icon.ico" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Cursor="Arrow">
+    <Window.Resources>
+        <BitmapImage x:Key="BG" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="D:\programming\PC\TuDiscoveryKids Downloader\TuDiscoveryKids Downloader\BG.png"/>
+    </Window.Resources>
+    <Grid Width="1012" Height="950">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="32*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="929" VerticalAlignment="Top" Width="1004" Source="{DynamicResource BG}" Stretch="None" Grid.ColumnSpan="3"/>
+        <ComboBox HorizontalAlignment="Left" Margin="427,205,0,0" VerticalAlignment="Top" Width="222" SelectionChanged="ComboBox_SelectionChanged" Text="Choose a game">
+            <ComboBoxItem x:Name="Saltando_con_Doki" Content="Saltando con Doki" HorizontalAlignment="Left" Width="118" Selected="Saltando_con_Doki_Selected"/>
+            <ComboBoxItem x:Name="Doki_y_los_Alimentos" Content="Doki y los alimentos" HorizontalAlignment="Left" Width="220" Margin="-2,0,0,0" Selected="Doki_y_los_Alimentos_Selected"/>
+            <ComboBoxItem x:Name="Doki_e_os_alimentos" Content="Doki e os alimentos" HorizontalAlignment="Left" Width="220" Selected="Doki_e_os_Alimentos_Selected"/>
+            <ComboBoxItem x:Name="Pulando_com_Doki" Content="Pulando com Doki" HorizontalAlignment="Left" Width="220" Selected="Pulando_com_Doki_Selected"/>
+            <ComboBoxItem x:Name="Habitos_y_Nutricion" Content="Hábitos y Nutrición" HorizontalAlignment="Left" Width="220" Selected="Habitos_y_Nutricion_Selected"/>
+            <ComboBoxItem x:Name="El_Juego_de_las_Emociones" Content="El Juego de las Emociones" HorizontalAlignment="Left" Width="220" Selected="El_Juego_de_las_Emociones_Selected"/>
+            <ComboBoxItem x:Name="Ordenando_los_Planetas" Content="Ordenando los Planetas" HorizontalAlignment="Left" Width="220" Selected="Ordenando_los_Planetas_Selected"/>
+            <ComboBoxItem x:Name="Ordenando_os_Planetas" Content="Ordenando os Planetas" HorizontalAlignment="Left" Width="220" Selected="Ordenando_os_Planetas_Selected"/>
+            <ComboBoxItem x:Name="Contando" Content="Contando" HorizontalAlignment="Left" Width="220" Selected="Contando_Selected"/>
+            <ComboBoxItem x:Name="Tu_Cuerpo" Content="Tu Cuerpo (W.I.P.)" HorizontalAlignment="Left" Width="220" Selected="Tu_Cuerpo_Selected"/>
+            <ComboBoxItem x:Name="A_Viajar_con_Carlitos" Content="A Viajar con Carlitos (W.I.P.)" HorizontalAlignment="Left" Width="220" Selected="A_Viajar_con_Carlitos_Selected"/>
+            <ComboBoxItem x:Name="Aprendiendo_Melodias_con_Doki" Content="Aprendiendo Melodías con Doki" HorizontalAlignment="Left" Width="220" Selected="Aprendiendo_Melodias_con_Doki_Selected"/>
+            <ComboBoxItem x:Name="Aprendendo_Melodias_com_Doki" Content="Aprendendo Melodias com Doki" HorizontalAlignment="Left" Width="220" Selected="Aprendendo_Melodias_com_Doki_Selected"/>
+            <ComboBoxItem x:Name="Astrodoki" Content="Astrodoki" HorizontalAlignment="Left" Width="220" Selected="Astrodoki_Selected"/>
+            <ComboBoxItem x:Name="Astrodoki_Portuguese" Content="Astrodoki (Portuguese)" HorizontalAlignment="Left" Width="220" Selected="Astrodoki_Portuguese_Selected"/>
+            <ComboBoxItem x:Name="Doki_y_el_Arbol_de_Mango" Content="Doki y el Árbol de Mango (W.I.P.)" HorizontalAlignment="Left" Width="220" Selected="Doki_y_el_Arbol_de_Mango_Selected"/>
+            <ComboBoxItem x:Name="Don_Cangrejito_Mango" Content="Don Cangrejito (W.I.P.)" HorizontalAlignment="Left" Width="220" Selected="Don_Cangrejito_Selected"/>
+            <ComboBoxItem x:Name="Laberinto_Pregunton_2" Content="Laberinto Preguntón 2" HorizontalAlignment="Left" Width="220" Selected="Laberinto_Pregunton_2_Selected"/>
+            <ComboBoxItem x:Name="Laberinto_Pregunton" Content="Laberinto Preguntón" HorizontalAlignment="Left" Width="220" Selected="Laberinto_Pregunton_Selected"/>
+            <ComboBoxItem x:Name="Doki_y_sus_globos_magicos" Content="Doki y sus globos mágicos (W.I.P.)" HorizontalAlignment="Left" Width="220" Selected="Doki_y_sus_globos_magicos_Selected"/>
+        </ComboBox>
+        <Label Content="Click on a game and then it downloads itself:" HorizontalAlignment="Left" Margin="412,174,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
